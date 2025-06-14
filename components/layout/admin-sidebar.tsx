@@ -168,8 +168,8 @@ export function AdminSidebar({ open, setOpen }: AdminSidebarProps) {
       <AvatarImage src="/placeholder.svg?height=32&width=32" />
     </Avatar>
     <div>
-      <div className="text-sm font-medium text-white">Music Admin</div>
-      <div className="text-xs text-slate-400">Platform Dashboard</div>
+      <div className="text-sm font-medium text-white">Single Audion</div>
+      <div className="text-xs text-slate-400">Platform Admin Dashboard</div>
     </div>
   </div>
   <Button

@@ -1,9 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 
-export const metadata: Metadata = {
-  title: 'Single Audio Admin',
-  description: 'Admin Panel',
+export const metadata = {
+  title: "Single Audio Admin Panel",
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
