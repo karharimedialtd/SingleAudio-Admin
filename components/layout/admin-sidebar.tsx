@@ -162,25 +162,26 @@ export function AdminSidebar({ open, setOpen }: AdminSidebarProps) {
         )}
       >
         {/* Header */}
-        <div className="flex h-16 shrink-0 items-center justify-between px-6 border-b border-slate-800">
-          <div className="flex items-center space-x-3">
-            <Avatar className="w-8 h-8">
-              <AvatarImage src="/placeholder.svg?height=32&width=32" />
-              <AvatarFallback className="bg-gradient-to-r from-purple-500 to-blue-500 text-white text-sm">
-                MA
-              </AvatarFallback>
-            </Avatar>
-            <div>
-              <div className="text-sm font-medium text-white">Music Admin</div>
-              <div className="text-xs text-slate-400">Platform Dashboard</div>
-            </div>
-          </div>
-          <Button variant="ghost" size="sm" className="lg:hidden text-slate-400" onClick={() => setOpen(false)}>
-            <X className="w-5 h-5" />
-          </Button>
-        </div>
-
-        {/* Navigation - Made scrollable */}
+<div className="flex h-16 shrink-0 items-center justify-between px-6 border-b border-slate-800">
+  <div className="flex items-center space-x-3">
+    <Avatar className="w-8 h-8">
+      <AvatarImage src="/placeholder.svg?height=32&width=32" />
+    </Avatar>
+    <div>
+      <div className="text-sm font-medium text-white">Music Admin</div>
+      <div className="text-xs text-slate-400">Platform Dashboard</div>
+    </div>
+  </div>
+  <Button
+    variant="ghost"
+    size="sm"
+    className="lg:hidden text-slate-400"
+    onClick={() => setOpen(false)}
+  >
+    <X className="w-5 h-5" />
+  </Button>
+</div>
+{/* Navigation - Made scrollable */}
         <nav className="flex-1 px-4 py-4 space-y-2 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-600 scrollbar-track-slate-800">
           {/* Main Navigation */}
           <div className="space-y-1">
