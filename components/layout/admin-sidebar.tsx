@@ -182,7 +182,7 @@ export function AdminSidebar({ open, setOpen }: AdminSidebarProps) {
   </Button>
 </div>
 {/* Navigation - Made scrollable */}
-        <nav className="flex-1 px-4 py-4 space-y-2 overflow-y-auto scrollbar-thin scrollbar-thumb-slate-600 scrollbar-track-slate-800">
+       <nav className="flex-1 px-4 py-4 space-y-2 overflow-y-auto max-h-[calc(100vh-64px-72px)] scrollbar-thin scrollbar-thumb-slate-600 scrollbar-track-slate-800">
           {/* Main Navigation */}
           <div className="space-y-1">
             {navigation.map((item) => (
