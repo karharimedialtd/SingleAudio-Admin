@@ -14,7 +14,7 @@ export function AdminLoginForm() {
   const [error, setError] = useState("")
   const router = useRouter()
 
-  const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api"
+  const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://backend-vkbo.onrender.com/api"
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -36,10 +36,10 @@ export function AdminLoginForm() {
         throw new Error(data.message || "Invalid email or password")
       }
 
-      // Save token
-      localStorage.setItem("token", data.token)
+      // Save token and user info (optional enhancement)
+      localStorage.setItem("token", data.data.token)
+      localStorage.setItem("admin", JSON.stringify(data.data.user))
 
-      // Redirect to dashboard
       router.push("/admin/dashboard")
     } catch (err: any) {
       setError(err.message || "Login failed. Please try again.")
